@@ -1,0 +1,112 @@
+# ::id 0
+# ::annotator bart-amr
+# ::snt Resolutely support the thread starter! I compose a poem in reply:
+(z0 / multi-sentence
+    :snt1 (z1 / support-01
+              :mode imperative
+              :ARG0 (z2 / you)
+              :ARG1 (z3 / person
+                        :ARG0-of (z4 / start-01
+                                     :ARG1 (z5 / thread)))
+              :manner (z6 / resolute))
+    :snt2 (z7 / compose-02
+              :ARG0 (z8 / i)
+              :ARG1 (z9 / poem)
+              :ARG2-of (z10 / reply-01
+                            :ARG0 z8)))
+
+# ::id 1
+# ::annotator bart-amr
+# ::snt Pledge to fight to the death defending the Diaoyu Islands and the related islands
+(z0 / pledge-01
+    :ARG2 (z1 / fight-01
+              :ARG2 (z2 / defend-01
+                        :ARG1 (z3 / and
+                                  :op1 (z4 / island
+                                           :wiki "Senkaku_Islands"
+                                           :name (z5 / name
+                                                     :op1 "Diaoyu"
+                                                     :op2 "Islands"))
+                                  :op2 (z6 / island
+                                           :ARG1-of (z7 / relate-01
+                                                        :ARG2 z4))))
+              :degree (z8 / die-01)))
+
+# ::id 2
+# ::annotator bart-amr
+# ::snt Fleets bumping fishing boats. Little evil Japanese ghosts stirring up trouble and unrest. With hearts of thieves and arrogant form, they again show their wolfish appearance
+(z0 / multi-sentence
+    :snt1 (z1 / bump-01
+              :ARG0 (z2 / fleet)
+              :ARG1 (z3 / boat
+                        :mod (z4 / fish-01)))
+    :snt2 (z5 / stir-up-04
+              :ARG0 (z6 / ghost
+                        :mod (z7 / evil)
+                        :mod (z8 / little)
+                        :mod (z9 / country
+                                 :wiki "Japan"
+                                 :name (z10 / name
+                                            :op1 "Japan"))
+                        :mod (z11 / evil))
+              :ARG1 (z12 / and
+                         :op1 (z13 / make-trouble-06)
+                         :op2 (z14 / unrest)))
+    :snt3 (z15 / show-01
+               :ARG0 (z16 / they
+                          :ARG0-of (z17 / have-03
+                                        :ARG1 (z18 / and
+                                                   :op1 (z19 / heart
+                                                             :part-of (z20 / person
+                                                                           :ARG0-of (z21 / steal-01)))
+                                                   :op2 (z22 / form
+                                                             :mod (z23 / arrogant)))))
+               :ARG1 (z24 / appear-01
+                          :ARG1 z16
+                          :mod (z25 / wolf))
+               :mod (z26 / again)))
+
+# ::id 3
+# ::annotator bart-amr
+# ::snt Never go back to that time, our humiliating appearance when signing the treaties. China be strong, swords be sharp and knives be shining, let's bury the approaching enemies!
+(z0 / multi-sentence
+    :snt1 (z1 / go-back-19
+              :polarity -
+              :mode imperative
+              :ARG1 (z2 / you)
+              :ARG2 (z3 / time
+                        :mod (z4 / that)
+                        :time-of (z5 / appear-01
+                                     :ARG1 (z6 / we)
+                                     :ARG0-of (z7 / humiliate-01)
+                                     :time (z8 / sign-02
+                                               :ARG0 z6
+                                               :ARG1 (z9 / treaty))))
+              :time (z10 / ever))
+    :snt2 (z11 / and
+               :op1 (z12 / strong-02
+                         :ARG1 (z13 / country
+                                    :wiki "China"
+                                    :name (z14 / name
+                                               :op1 "China")))
+               :op2 (z15 / sharp-02
+                         :ARG1 (z16 / sword))
+               :op3 (z17 / shine-01
+                         :ARG1 (z18 / knife))
+               :ARG0-of (z19 / cause-01
+                             :ARG1 (z20 / bury-01
+                                        :mode imperative
+                                        :ARG0 (z21 / we)
+                                        :ARG1 (z22 / person
+                                                   :ARG0-of (z23 / have-rel-role-91
+                                                                 :ARG1 z21
+                                                                 :ARG2 (z24 / enemy))
+                                                   :ARG1-of (z25 / approach-01))))))
+
+# ::id 4
+# ::annotator bart-amr
+# ::snt September 11th, 2010
+(z0 / date-entity
+    :month 9
+    :day 11
+    :year 2010)

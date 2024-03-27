@@ -1,0 +1,71 @@
+Sentence,umr_test,umr_gold,Match T2G,Match G2T,Concept Match Precision,Concept Match Recall,Concept Match F Score,Labeled Relational Match Precision,Labeled Relational Match Recall,LRM F-Score,ULRM F-Score,WLRM F-score,Smatch Score
+Lindsay left in order to eat lunch .,"# ::id 1
+# ::snt Lindsay left in order to eat lunch .
+(s1x0 / leave-11
+    :ARG0    (s1x1 / person
+        :name    (s1x2 / name
+            :op1    ""lindsay"")
+        :wiki    ""lindsay_rappaport""
+        :ARG0-of    (s1x3 / lunch-01
+            :purpose-of    s1x0)))
+
+","# ::id 1
+# ::snt Lindsay left in order to eat lunch .
+(s1l / leave-02
+    :ARG0    (s1p / person
+        :name    (s1n / name
+            :op1    ""lindsay"")
+        :ARG0-of    (s1e / eat-01
+            :ARG1    (s1l2 / lunch)
+            :aspect    performance
+            :purpose-of    s1l))
+    :aspect    performance)
+
+","s1x3 / lunch: s1l2 / lunch 	 Q-level = 0
+s1x0 / leave: s1l / leave 	 Q-level = 1
+s1x1 / person: s1p / person 	 Q-level = 1
+s1x2 / name: s1n / name 	 Q-level = 1
+
+Good quality percentage:	100.00%","s1l2 / lunch: s1x3 / lunch 	 Q-level = 0
+s1l / leave: s1x0 / leave 	 Q-level = 1
+s1p / person: s1x1 / person 	 Q-level = 1
+s1n / name: s1x2 / name 	 Q-level = 1
+s1e / eat: null 	 Q-level = -2
+
+Good quality percentage:	80.00%",95.00%,95.00%,95.00%,49.17%,36.88%,42.14%,42.14%,38.20%,48.00%
+"If it rains , Alana won't water the plants .","# ::id 2
+# ::snt If it rains , Alana won't water the plants .
+(s2x0 / water-01
+    :ARG0    (s2x1 / state
+        :name    (s2x2 / name
+            :op1    ""alaska"")
+        :wiki    ""alaska"")
+    :ARG1    (s2x3 / plant)
+    :condition    (s2x4 / rain-01)
+    :polarity    -)
+
+","# ::id 2
+# ::snt If it rains , Alana won't water the plants .
+(s2w / water-01
+    :ARG0    (s2p / person
+        :name    (s2n / name
+            :op1    ""alana""))
+    :ARG1    (s2p2 / plant
+        :refer-number    plural)
+    :condition    (s2r / rain-01
+        :aspect    process)
+    :aspect    performance)
+
+","s2x0 / water: s2w / water 	 Q-level = 0
+s2x3 / plant: s2p2 / plant 	 Q-level = 0
+s2x4 / rain: s2r / rain 	 Q-level = 0
+s2x1 / state: s2p / person 	 Q-level = 1
+s2x2 / name: s2n / name 	 Q-level = 1
+
+Good quality percentage:	100.00%","s2w / water: s2x0 / water 	 Q-level = 0
+s2p2 / plant: s2x3 / plant 	 Q-level = 0
+s2r / rain: s2x4 / rain 	 Q-level = 0
+s2p / person: s2x1 / state 	 Q-level = 1
+s2n / name: s2x2 / name 	 Q-level = 1
+
+Good quality percentage:	100.00%",60.00%,60.00%,60.00%,42.86%,37.50%,40.00%,40.00%,40.68%,59.26%

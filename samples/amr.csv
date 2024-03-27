@@ -1,0 +1,383 @@
+Sentence,amr_test,amr_gold,Match T2G,Match G2T,Concept Match Precision,Concept Match Recall,Concept Match F Score,Labeled Relational Match Precision,Labeled Relational Match Recall,LRM F-Score,ULRM F-Score,WLRM F-score,Smatch Score
+Resolutely support the thread starter! I compose a poem in reply:,"# ::id 1
+# ::snt Resolutely support the thread starter! I compose a poem in reply:
+(z0 / multi-sentence
+    :snt1    (z1 / support-01
+        :mode    imperative
+        :ARG0    (z2 / you)
+        :ARG1    (z3 / person
+            :ARG0-of    (z4 / start-01
+                :ARG1    (z5 / thread)))
+        :manner    (z6 / resolute))
+    :snt2    (z7 / compose-02
+        :ARG0    (z8 / i
+            :ARG0-of    (z10 / reply-01
+                :ARG2    z7))
+        :ARG1    (z9 / poem)))
+
+","# ::id 1
+# ::snt Resolutely support the thread starter! I compose a poem in reply:
+(m / multi-sentence
+    :snt1    (s / support-01
+        :mode    imperative
+        :ARG0    (y / you)
+        :ARG1    (p / person
+            :ARG0-of    (s2 / start-01
+                :ARG1    (t / thread)))
+        :manner    (r / resolute))
+    :snt2    (r2 / reply-01
+        :ARG0    (i / i
+            :ARG0-of    (c / compose-02
+                :ARG1    (p2 / poem)
+                :ARG2-of    r2))))
+
+","z1 / support: s / support 	 Q-level = 0
+z4 / start: s2 / start 	 Q-level = 0
+z5 / thread: t / thread 	 Q-level = 0
+z6 / resolute: r / resolute 	 Q-level = 0
+z7 / compose: c / compose 	 Q-level = 0
+z8 / i: i / i 	 Q-level = 0
+z9 / poem: p2 / poem 	 Q-level = 0
+z10 / reply: r2 / reply 	 Q-level = 0
+z0 / multi-sentence: m / multi-sentence 	 Q-level = 1
+z2 / you: y / you 	 Q-level = 1
+z3 / person: p / person 	 Q-level = 1
+
+Good quality percentage:	100.00%","s / support: z1 / support 	 Q-level = 0
+s2 / start: z4 / start 	 Q-level = 0
+t / thread: z5 / thread 	 Q-level = 0
+r / resolute: z6 / resolute 	 Q-level = 0
+c / compose: z7 / compose 	 Q-level = 0
+i / i: z8 / i 	 Q-level = 0
+p2 / poem: z9 / poem 	 Q-level = 0
+r2 / reply: z10 / reply 	 Q-level = 0
+m / multi-sentence: z0 / multi-sentence 	 Q-level = 1
+y / you: z2 / you 	 Q-level = 1
+p / person: z3 / person 	 Q-level = 1
+
+Good quality percentage:	100.00%",100.00%,100.00%,100.00%,91.67%,91.67%,91.67%,91.67%,84.97%,95.83%
+Pledge to fight to the death defending the Diaoyu Islands and the related islands,"# ::id 2
+# ::snt Pledge to fight to the death defending the Diaoyu Islands and the related islands
+(z0 / pledge-01
+    :ARG2    (z1 / fight-01
+        :ARG2    (z2 / defend-01
+            :ARG1    (z3 / and
+                :op1    (z4 / island
+                    :wiki    ""senkaku_islands""
+                    :name    (z5 / name
+                        :op1    ""diaoyu""
+                        :op2    ""islands"")
+                    :ARG2-of    (z7 / relate-01
+                        :ARG1    (z6 / island
+                            :op2-of    z3)))))
+        :degree    (z8 / die-01)))
+
+","# ::id 2
+# ::snt Pledge to fight to the death defending the Diaoyu Islands and the related islands
+(p / pledge-01
+    :mode    imperative
+    :ARG0    (y / you
+        :ARG0-of    (f / fight-01
+            :ARG2    (d2 / defend-01
+                :ARG0    y
+                :ARG1    (a / and
+                    :op1    (i / island
+                        :wiki    ""senkaku_islands""
+                        :name    (n / name
+                            :op1    ""diaoyu""
+                            :op2    ""islands"")
+                        :ARG2-of    (r / relate-01
+                            :ARG1    (i2 / island
+                                :op2-of    a)))))
+            :manner    (d / die-01
+                :ARG1    y)
+            :ARG2-of    p)))
+
+","z0 / pledge: p / pledge 	 Q-level = 0
+z1 / fight: f / fight 	 Q-level = 0
+z2 / defend: d2 / defend 	 Q-level = 0
+z3 / and: a / and 	 Q-level = 0
+z7 / relate: r / relate 	 Q-level = 0
+z4 / island: i / island 	 Q-level = 1
+z5 / name: n / name 	 Q-level = 1
+z6 / island: i2 / island 	 Q-level = 1
+z8 / die: d / die 	 Q-level = 1
+
+Good quality percentage:	100.00%","p / pledge: z0 / pledge 	 Q-level = 0
+f / fight: z1 / fight 	 Q-level = 0
+d2 / defend: z2 / defend 	 Q-level = 0
+a / and: z3 / and 	 Q-level = 0
+r / relate: z7 / relate 	 Q-level = 0
+i / island: z4 / island 	 Q-level = 1
+n / name: z5 / name 	 Q-level = 1
+i2 / island: z6 / island 	 Q-level = 1
+d / die: z8 / die 	 Q-level = 1
+y / you: null 	 Q-level = -2
+
+Good quality percentage:	90.00%",100.00%,100.00%,100.00%,91.67%,64.71%,75.86%,82.76%,77.53%,84.00%
+"Fleets bumping fishing boats. Little evil Japanese ghosts stirring up trouble and unrest. With hearts of thieves and arrogant form, they again show their wolfish appearance","# ::id 3
+# ::snt Fleets bumping fishing boats. Little evil Japanese ghosts stirring up trouble and unrest. With hearts of thieves and arrogant form, they again show their wolfish appearance
+(z0 / multi-sentence
+    :snt1    (z1 / bump-01
+        :ARG0    (z2 / fleet)
+        :ARG1    (z3 / boat
+            :mod    (z4 / fish-01)))
+    :snt2    (z5 / stir-up-04
+        :ARG0    (z6 / ghost
+            :mod    (z7 / evil)
+            :mod    (z8 / little)
+            :mod    (z9 / country
+                :wiki    ""japan""
+                :name    (z10 / name
+                    :op1    ""japan""))
+            :mod    (z11 / evil))
+        :ARG1    (z12 / and
+            :op1    (z13 / make-trouble-06)
+            :op2    (z14 / unrest)))
+    :snt3    (z15 / show-01
+        :ARG0    (z16 / they
+            :ARG0-of    (z17 / have-03
+                :ARG1    (z18 / and
+                    :op1    (z19 / heart
+                        :part-of    (z20 / person
+                            :ARG0-of    (z21 / steal-01)))
+                    :op2    (z22 / form
+                        :mod    (z23 / arrogant))))
+            :ARG1-of    (z24 / appear-01
+                :mod    (z25 / wolf)
+                :ARG1-of    z15))
+        :mod    (z26 / again)))
+
+","# ::id 3
+# ::snt Fleets bumping fishing boats. Little evil Japanese ghosts stirring up trouble and unrest. With hearts of thieves and arrogant form, they again show their wolfish appearance
+(m / multi-sentence
+    :snt1    (b / bump-01
+        :ARG1    (b2 / boat
+            :purpose    (f / fish-01))
+        :ARG2    (f2 / fleet))
+    :snt3    (s2 / show-01
+        :ARG0    (t2 / they
+            :ARG0-of    (h2 / have-03
+                :ARG1    (a4 / and
+                    :op1    (h / heart
+                        :mod    (p / person
+                            :ARG0-of    (s3 / steal-01)))
+                    :op2    (f3 / form
+                        :mod    (a5 / arrogance))))
+            :poss-of    (a3 / appearance
+                :mod    (w / wolfish)
+                :ARG1-of    s2))
+        :mod    (a2 / again))
+    :snt2    (a6 / and
+        :op1    (s / stir-up-04
+            :ARG0    (g / ghost
+                :mod    (c / country
+                    :wiki    ""japan""
+                    :name    (n / name
+                        :op1    ""japan""))
+                :mod    (l / little)
+                :mod    (e / evil)
+                :ARG0-of    (m2 / make-trouble-06
+                    :op2-of    a6))
+            :ARG1    (u / unrest))))
+
+","z1 / bump: b / bump 	 Q-level = 0
+z2 / fleet: f2 / fleet 	 Q-level = 0
+z3 / boat: b2 / boat 	 Q-level = 0
+z4 / fish: f / fish 	 Q-level = 0
+z6 / ghost: g / ghost 	 Q-level = 0
+z8 / little: l / little 	 Q-level = 0
+z14 / unrest: u / unrest 	 Q-level = 0
+z15 / show: s2 / show 	 Q-level = 0
+z16 / they: t2 / they 	 Q-level = 0
+z19 / heart: h / heart 	 Q-level = 0
+z22 / form: f3 / form 	 Q-level = 0
+z26 / again: a2 / again 	 Q-level = 0
+z0 / multi-sentence: m / multi-sentence 	 Q-level = 1
+z5 / stir-up: s / stir-up 	 Q-level = 1
+z9 / country: c / country 	 Q-level = 1
+z10 / name: n / name 	 Q-level = 1
+z12 / and: a6 / and 	 Q-level = 1
+z13 / make-trouble: m2 / make-trouble 	 Q-level = 1
+z17 / have: h2 / have 	 Q-level = 1
+z18 / and: a4 / and 	 Q-level = 1
+z20 / person: p / person 	 Q-level = 1
+z21 / steal: s3 / steal 	 Q-level = 1
+z23 / arrogant: a5 / arrogance 	 Q-level = 1
+z24 / appear: a3 / appearance 	 Q-level = 1
+z25 / wolf: w / wolfish 	 Q-level = 1
+z7 / evil: e / evil 	 Q-level = -1
+z11 / evil: null 	 Q-level = -2
+
+Good quality percentage:	92.59%","b / bump: z1 / bump 	 Q-level = 0
+f2 / fleet: z2 / fleet 	 Q-level = 0
+b2 / boat: z3 / boat 	 Q-level = 0
+f / fish: z4 / fish 	 Q-level = 0
+g / ghost: z6 / ghost 	 Q-level = 0
+l / little: z8 / little 	 Q-level = 0
+u / unrest: z14 / unrest 	 Q-level = 0
+s2 / show: z15 / show 	 Q-level = 0
+t2 / they: z16 / they 	 Q-level = 0
+h / heart: z19 / heart 	 Q-level = 0
+f3 / form: z22 / form 	 Q-level = 0
+a2 / again: z26 / again 	 Q-level = 0
+m / multi-sentence: z0 / multi-sentence 	 Q-level = 1
+s / stir-up: z5 / stir-up 	 Q-level = 1
+c / country: z9 / country 	 Q-level = 1
+n / name: z10 / name 	 Q-level = 1
+a6 / and: z12 / and 	 Q-level = 1
+m2 / make-trouble: z13 / make-trouble 	 Q-level = 1
+h2 / have: z17 / have 	 Q-level = 1
+a4 / and: z18 / and 	 Q-level = 1
+p / person: z20 / person 	 Q-level = 1
+s3 / steal: z21 / steal 	 Q-level = 1
+a5 / arrogance: z23 / arrogant 	 Q-level = 1
+a3 / appearance: z24 / appear 	 Q-level = 1
+w / wolfish: z25 / wolf 	 Q-level = 1
+e / evil: z7 / evil 	 Q-level = -1
+
+Good quality percentage:	96.15%",89.30%,89.30%,89.30%,64.92%,64.92%,64.92%,77.92%,64.51%,77.88%
+"Never go back to that time, our humiliating appearance when signing the treaties. China be strong, swords be sharp and knives be shining, let's bury the approaching enemies!","# ::id 4
+# ::snt Never go back to that time, our humiliating appearance when signing the treaties. China be strong, swords be sharp and knives be shining, let's bury the approaching enemies!
+(z0 / multi-sentence
+    :snt1    (z1 / go-back-19
+        :polarity    -
+        :mode    imperative
+        :ARG1    (z2 / you)
+        :ARG2    (z3 / time
+            :mod    (z4 / that)
+            :time-of    (z5 / appear-01
+                :ARG1    (z6 / we
+                    :ARG0-of    (z8 / sign-02
+                        :ARG1    (z9 / treaty)
+                        :time-of    z5))
+                :ARG0-of    (z7 / humiliate-01)))
+        :time    (z10 / ever))
+    :snt2    (z11 / and
+        :op1    (z12 / strong-02
+            :ARG1    (z13 / country
+                :wiki    ""china""
+                :name    (z14 / name
+                    :op1    ""china"")))
+        :op2    (z15 / sharp-02
+            :ARG1    (z16 / sword))
+        :op3    (z17 / shine-01
+            :ARG1    (z18 / knife))
+        :ARG0-of    (z19 / cause-01
+            :ARG1    (z20 / bury-01
+                :mode    imperative
+                :ARG0    (z21 / we
+                    :ARG1-of    (z23 / have-rel-role-91
+                        :ARG2    (z24 / enemy)
+                        :ARG0    (z22 / person
+                            :ARG1-of    (z25 / approach-01)
+                            :ARG1-of    z20)))))))
+
+","# ::id 4
+# ::snt Never go back to that time, our humiliating appearance when signing the treaties. China be strong, swords be sharp and knives be shining, let's bury the approaching enemies!
+(m / multi-sentence
+    :snt1    (g / go-back-19
+        :mode    imperative
+        :polarity    -
+        :ARG1    (y / you)
+        :ARG2    (t2 / time
+            :mod    (t3 / that)
+            :time-of    (a / appear-01
+                :ARG1    (w / we
+                    :ARG0-of    (s / sign-02
+                        :ARG1    (t / treaty)
+                        :time-of    a))
+                :ARG0-of    (h / humiliate-01)))
+        :time    (e / ever)
+        :direction    (b / back))
+    :snt2    (s2 / strong-02
+        :mode    imperative
+        :ARG1    (c / country
+            :wiki    ""china""
+            :name    (n / name
+                :op1    ""china"")))
+    :snt3    (a2 / and
+        :op1    (s3 / sharp-02
+            :mode    imperative
+            :ARG1    (s4 / sword))
+        :op2    (s5 / shine-01
+            :mode    imperative
+            :ARG0    (k / knife)))
+    :snt4    (b3 / bury-01
+        :mode    imperative
+        :ARG0    (w2 / we)
+        :ARG1    (e2 / enemy
+            :ARG1-of    (a4 / approach-01))))
+
+","z3 / time: t2 / time 	 Q-level = 0
+z4 / that: t3 / that 	 Q-level = 0
+z5 / appear: a / appear 	 Q-level = 0
+z8 / sign: s / sign 	 Q-level = 0
+z10 / ever: e / ever 	 Q-level = 0
+z11 / and: a2 / and 	 Q-level = 0
+z12 / strong: s2 / strong 	 Q-level = 0
+z15 / sharp: s3 / sharp 	 Q-level = 0
+z16 / sword: s4 / sword 	 Q-level = 0
+z20 / bury: b3 / bury 	 Q-level = 0
+z25 / approach: a4 / approach 	 Q-level = 0
+z0 / multi-sentence: m / multi-sentence 	 Q-level = 1
+z1 / go-back: g / go-back 	 Q-level = 1
+z2 / you: y / you 	 Q-level = 1
+z6 / we: w / we 	 Q-level = 1
+z7 / humiliate: h / humiliate 	 Q-level = 1
+z9 / treaty: t / treaty 	 Q-level = 1
+z13 / country: c / country 	 Q-level = 1
+z14 / name: n / name 	 Q-level = 1
+z17 / shine: s5 / shine 	 Q-level = 1
+z18 / knife: k / knife 	 Q-level = 1
+z24 / enemy: e2 / enemy 	 Q-level = 1
+z21 / we: w2 / we 	 Q-level = -1
+z22 / person: b / back 	 Q-level = -1
+z19 / cause: null 	 Q-level = -2
+z23 / have-rel-role: null 	 Q-level = -2
+
+Good quality percentage:	84.62%","t2 / time: z3 / time 	 Q-level = 0
+t3 / that: z4 / that 	 Q-level = 0
+a / appear: z5 / appear 	 Q-level = 0
+s / sign: z8 / sign 	 Q-level = 0
+e / ever: z10 / ever 	 Q-level = 0
+a2 / and: z11 / and 	 Q-level = 0
+s2 / strong: z12 / strong 	 Q-level = 0
+s3 / sharp: z15 / sharp 	 Q-level = 0
+s4 / sword: z16 / sword 	 Q-level = 0
+b3 / bury: z20 / bury 	 Q-level = 0
+a4 / approach: z25 / approach 	 Q-level = 0
+m / multi-sentence: z0 / multi-sentence 	 Q-level = 1
+g / go-back: z1 / go-back 	 Q-level = 1
+y / you: z2 / you 	 Q-level = 1
+w / we: z6 / we 	 Q-level = 1
+h / humiliate: z7 / humiliate 	 Q-level = 1
+t / treaty: z9 / treaty 	 Q-level = 1
+c / country: z13 / country 	 Q-level = 1
+n / name: z14 / name 	 Q-level = 1
+s5 / shine: z17 / shine 	 Q-level = 1
+k / knife: z18 / knife 	 Q-level = 1
+e2 / enemy: z24 / enemy 	 Q-level = 1
+w2 / we: z21 / we 	 Q-level = -1
+b / back: z22 / person 	 Q-level = -1
+
+Good quality percentage:	91.67%",88.46%,88.46%,88.46%,62.50%,62.50%,62.50%,75.00%,51.84%,75.86%
+"September 11th, 2010","# ::id 5
+# ::snt September 11th, 2010
+(z0 / date-entity
+    :month    9
+    :day    11
+    :year    2010)
+
+","# ::id 5
+# ::snt September 11th, 2010
+(d / date-entity
+    :month    9
+    :day    11
+    :year    2010)
+
+","z0 / date-entity: d / date-entity 	 Q-level = 1
+
+Good quality percentage:	100.00%","d / date-entity: z0 / date-entity 	 Q-level = 1
+
+Good quality percentage:	100.00%",100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%,100.00%
