@@ -18,8 +18,8 @@ class Sentence:
         self.alignment = alignment # dict()
         try:
             self.head, self.var2node = self.parse(semantic_text, format)
-        except RuntimeError as e:
-            print(f"Ignoring Sentence {self.sent_num} because {e}")
+        except Exception as e:
+            print(f"Ignoring Sentence {self.sent_num} because {e} \n Content: {self.text}")
             self.invalid = True
         if get_reify and not self.invalid:
             self.var2node = self.reify()
