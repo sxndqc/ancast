@@ -150,14 +150,18 @@ class DocumentMatch:
                 bgi = -1
 
                 for bt in blocks_test:
-                    
                     # start_time = time.time()
-                
                     bgi += 1
+
+                    if "#" not in bt:
+                        print(f"Encountered unknown block in {bgi}, skipping")
+                        continue
+                        
                     bt_match = re.search(r"::snt\s", bt)
                     if bt_match:          # the block is crucial
                         while not re.search(r"::snt\s", blocks_gold[bgi]):
                             bgi += 1
+
                         bg = blocks_gold[bgi]
                         bg_match = re.search(r"::snt\s", bg)
                         name += 1
